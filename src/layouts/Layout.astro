@@ -1,3 +1,6 @@
+---
+import Header from '../components/Header'
+---
 <!doctype html>
 <html lang="en">
 	<head>
@@ -5,9 +8,11 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<link rel="stylesheet" href="../assets/index.css" />
+		<title>JZPortfolio</title>
 	</head>
 	<body>
+		<Header client:load/>
 		<slot />
 	</body>
 </html>
